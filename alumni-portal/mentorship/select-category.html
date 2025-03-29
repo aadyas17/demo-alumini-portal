@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alumni Profile | Alumni Portal</title>
+    <title>Select Mentor Category | Alumni Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black text-white flex justify-center items-center h-screen">
-    <div class="bg-gray-900 p-8 rounded-lg shadow-lg w-96">
-        <h2 class="text-2xl font-bold text-center mb-4">Alumni Profile</h2>
-        <input type="email" placeholder="Email" class="w-full p-2 rounded bg-gray-800 text-white mb-3">
-        <input type="tel" placeholder="Phone Number" class="w-full p-2 rounded bg-gray-800 text-white mb-3">
-        <input type="text" placeholder="Company & Role" class="w-full p-2 rounded bg-gray-800 text-white mb-3">
-        <input type="text" placeholder="Skill Set" class="w-full p-2 rounded bg-gray-800 text-white mb-3">
-        <input type="text" placeholder="Educational Details" class="w-full p-2 rounded bg-gray-800 text-white mb-3">
-        <button onclick="submitProfile('alumni')" class="w-full bg-white text-black p-2 rounded font-semibold">Save Profile</button>
+<body class="bg-black text-white flex flex-col items-center justify-center min-h-screen">
+    <h2 class="text-3xl font-bold mb-6">Select Your Field of Interest</h2>
+    <div class="grid grid-cols-2 gap-4">
+        <button class="bg-gray-800 p-4 rounded-lg w-48 hover:bg-gray-700" onclick="selectCategory('AI')">AI</button>
+        <button class="bg-gray-800 p-4 rounded-lg w-48 hover:bg-gray-700" onclick="selectCategory('Machine Learning')">Machine Learning</button>
+        <button class="bg-gray-800 p-4 rounded-lg w-48 hover:bg-gray-700" onclick="selectCategory('Data Science')">Data Science</button>
     </div>
 </body>
 </html>

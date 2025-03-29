@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alumni Profile | Alumni Portal</title>
+    <title>Alumni Dashboard | Alumni Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/styles.css">
 </head>
-<body class="bg-black text-white flex justify-center items-center h-screen">
-    <div class="bg-gray-900 p-8 rounded-lg shadow-lg w-96">
-        <h2 class="text-2xl font-bold text-center mb-4">Alumni Profile</h2>
-        <input type="email" placeholder="Email" class="w-full p-2 rounded bg-gray-800 text-white mb-3">
-        <input type="tel" placeholder="Phone Number" class="w-full p-2 rounded bg-gray-800 text-white mb-3">
-        <input type="text" placeholder="Company & Role" class="w-full p-2 rounded bg-gray-800 text-white mb-3">
-        <input type="text" placeholder="Skill Set" class="w-full p-2 rounded bg-gray-800 text-white mb-3">
-        <input type="text" placeholder="Educational Details" class="w-full p-2 rounded bg-gray-800 text-white mb-3">
-        <button onclick="submitProfile('alumni')" class="w-full bg-white text-black p-2 rounded font-semibold">Save Profile</button>
+<body class="bg-black text-white flex flex-col min-h-screen">
+    <nav class="bg-gray-900 p-4 text-center text-xl font-bold">Alumni Dashboard</nav>
+    <div class="p-6">
+        <h2 class="text-2xl font-bold mb-4">Welcome, Mentor!</h2>
+        <p class="text-gray-400">Manage mentorship requests.</p>
+        <button class="mt-4 bg-blue-500 text-white p-2 rounded">View Requests</button>
     </div>
 </body>
 </html>

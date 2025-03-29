@@ -11,9 +11,24 @@
         <h2 class="text-2xl font-bold text-center mb-4">Alumni Login</h2>
         <input type="email" id="email" placeholder="Email" class="w-full p-2 rounded bg-gray-800 text-white mb-3">
         <input type="password" id="password" placeholder="Password" class="w-full p-2 rounded bg-gray-800 text-white mb-3">
-        <button onclick="loginUser('alumni')" class="w-full bg-white text-black p-2 rounded font-semibold">Login</button>
+        <button onclick="loginUser ()" class="w-full bg-white text-black p-2 rounded font-semibold">Login</button>
         <p class="text-center text-gray-400 mt-4">New here? <a href="#" class="text-blue-400">Register</a></p>
     </div>
-    <script src="scripts/main.js"></script>
+    <script>
+        function loginUser () {
+            // Get the values from the input fields
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+    
+            // Check if the credentials match
+            if (email === 'alumni@gmail.com' && password === 'pass123') {
+                // Redirect to the alumni profile page
+                window.location.href = 'alumni-portal/profiles/alumini-profile.html'; // Adjusted path
+            } else {
+                // Optionally, you can alert the user about incorrect credentials
+                alert('Invalid email or password. Please try again.');
+            }
+        }
+    </script>
 </body>
 </html>
