@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor List | Alumni Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body class="bg-black text-white flex flex-col items-center min-h-screen p-6">
+    <h2 class="text-3xl font-bold mb-6">Available Mentors</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="mentor-card bg-gray-900 p-4 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold">John Doe</h3>
+            <p class="text-gray-400">Data Scientist at Google</p>
+            <button class="bg-blue-500 text-white p-2 rounded mt-3 w-full" onclick="requestMentorship('John Doe')">Request Mentorship</button>
+        </div>
+        <div class="mentor-card bg-gray-900 p-4 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold">Jane Smith</h3>
+            <p class="text-gray-400">AI Engineer at OpenAI</p>
+            <button class="bg-blue-500 text-white p-2 rounded mt-3 w-full" onclick="requestMentorship('Jane Smith')">Request Mentorship</button>
+        </div>
+    </div>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>
